@@ -1,0 +1,117 @@
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+}
+
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+}
+
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+  }
+}
+
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgb(250,225,175);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  place-items: center;
+  overflow: hidden;
+}
+.container{
+  position: absolute;
+  width: 500px;
+  height: 750px;
+  border-radius: 50px;
+  padding: 2.5%;
+  box-sizing: border-box;
+  background: rgb(250,225,175);
+  box-shadow: -2.5px -5px 25px rgba(250, 250, 250, 0.10), 2.5px 5px 25px rgba(25, 25, 25, 0.10)
+ }
+
+ h1 {
+  font-family: 'Comfortaa';
+  text-align: center;
+  color:rgba(25, 25, 25, 0.50);
+  margin-top: 25px;
+ }
+ h2 {
+  letter-spacing: -2.5px;
+  font-family: 'Comfortaa';
+  text-align: center;
+  color:rgba(25, 25, 25, 0.25);
+  margin-top: -25px;
+ }
+ p {
+  font-size: 12px;
+  font-family: 'Comfortaa';
+  position: relative;
+  text-align: center;
+  color:rgba(25, 25, 25, 0.50);
+  letter-spacing: 1px;
+ }
+
+ .text {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background: rgb(250,225,175);
+  padding: 10px;
+  padding-left: 20px;
+  height: 50px;
+  font-size: 14px;
+  border-radius: 50px;
+  box-shadow: inset 2.5px 2.5px 5px  rgba(250, 250, 250, 0.10), inset 2.5px 2.5px 5px rgba(25, 25, 25, 0.10)
+}
+
+
+
+img {
+  margin: 25px;
+  border: 7.5px solid rgb(250,225,175);
+  border-radius: 500px;
+  box-sizing: border-box;
+  box-shadow: 2.5px 5px 25px rgba(250, 250, 250, 0.10), -2.5px -5px 25px rgba(25, 25, 25, 0.10);
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+  position: relative;
+  display: inline-block;
+  padding: 0px 0px;
+}
+.button {
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  place-items: center;
+  position: absolute;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  color: rgb(25,22,25);
+  border-radius: 500px;
+  margin-top: 20px;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  border: 5px solid rgb(250,225,175);
+  box-shadow: 2.5px 5px 25px rgba(250, 250, 250, 0.15), -2.5px -5px 25px rgba(25, 25, 25, 0.15);
+  transition: 0.5s;
+}
+.button:hover {
+  box-shadow: 5px 2.5px 25px rgba(25, 25, 25, 0.25), -5px -2.5px 25px rgba(250, 250, 250, 0.25);
+}
